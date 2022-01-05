@@ -7,16 +7,24 @@
 #Number of vowels: 5
 
 vowels = 'aeiouAEIOU'
-s = 'azcbobobegghakl' #5 vowels
-n = 'Alvaro' #3 vowels
-c = 'n0tv0w3ls' #0 vowels
-def countVowels(string):
-    total = 0
-    for letter in string:
-        if letter in vowels:
-            total += 1
-    print(f'Number of vowels in {string}: {total}')
 
-countVowels(s)
-countVowels(n)
-countVowels(c)
+total = 0
+for letter in s:
+    if letter in vowels:
+        total += 1
+
+print('Number of vowels: ' + str(total))
+
+#s = 'azcbobobegghakl' #5 vowels
+#n = 'Alvaro' #3 vowels
+#c = 'n0tv0w3ls' #0 vowels
+#def countVowels(string):
+#    total = 0
+#    for letter in string:
+#        if letter in vowels:
+#            total += 1
+#    print(f'Number of vowels in {string}: {total}')
+
+#countVowels(s)
+#countVowels(n)
+#countVowels(c)
