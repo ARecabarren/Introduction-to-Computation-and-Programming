@@ -1,4 +1,17 @@
+#Bref
+
+
+
 def lastBalance(balance, annualInterestRate, fixedPayment):
+    '''
+    Takes parameters and iterates to know the balance at the end of 12 months
+
+    balance: int, initicial Balance
+    annualInterestRate: int or float, interest applied over unpaid balance after a year
+    fixedPayment: int or float, mount reduced each month from the debt
+
+    returns the final balance
+    '''
     for i in range(12):
         temp = balance - fixedPayment
         balance = temp + temp * (annualInterestRate/12)
